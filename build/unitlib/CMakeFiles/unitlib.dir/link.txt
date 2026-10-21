@@ -1,0 +1,2 @@
+/usr/bin/ar qc libunitlib.a CMakeFiles/unitlib.dir/src/unitlib.cpp.o
+/usr/bin/ranlib libunitlib.a
