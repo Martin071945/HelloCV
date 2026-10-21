@@ -14,3 +14,27 @@
 1. CMake理论学习：https://www.yuque.com/martin1945/gtet4n/phlmsgw814sgvq9k?singleDoc# 《第二周任务——CMake理论学习》
 2. CMake任务实践：https://www.yuque.com/martin1945/gtet4n/ghg8vofbnqie6p02?singleDoc# 《第二周任务——CMake任务实践》
 3. LLM学习与应用：https://www.yuque.com/martin1945/gtet4n/cafg6s98y2zcba3t?singleDoc# 《第二周任务——LLM学习与应用》
+
+【关于LLM的学习提要】
+实际上，需要补全的的网关文件各自承担的任务如下：
+`config.py`	存“这次运行的全部参数”
+`prompts.py`	存“怎么跟模型说话”
+`json_guard.py`	将文本翻译为 Python 能够理解的语句
+`rules.py`	存决策（校验字段/归一/兜底等）
+`client.py`	发送 HTTP、重试、只取答案
+`app.py`	指定输入输出是“一行进一行出”
+`game.py`	存对局规则，包括对手策略、裁判、记分
+
+对于补全后的代码，根据`README.md`的要求进行验证能够跑通，需要如下指令：
+(1)93个测试
+```bash
+cd ../skeleton
+python3 selfcheck.py
+```
+运行后，出现“所有TODO”都实现完了，并提示93个测试全部完整，证明我们的网关代码补全正确。
+(2)正常游戏
+```bash
+export DEEPSEEK_API_KEY=sk-xxx #xxx处为个人API key
+python3 play_chat.py --rounds 10
+```
+运行后应当能够进入剪刀石头布的游戏界面，并进行各种操作。
