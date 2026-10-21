@@ -1,6 +1,0 @@
-/home/martin/UnitConverter/build/CMakeFiles/main.dir
-/home/martin/UnitConverter/build/CMakeFiles/edit_cache.dir
-/home/martin/UnitConverter/build/CMakeFiles/rebuild_cache.dir
-/home/martin/UnitConverter/build/unitlib/CMakeFiles/unitlib.dir
-/home/martin/UnitConverter/build/unitlib/CMakeFiles/edit_cache.dir
-/home/martin/UnitConverter/build/unitlib/CMakeFiles/rebuild_cache.dir
