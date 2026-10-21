@@ -1,0 +1,10 @@
+﻿# 助教的参考实现（example）与本机临时备份不属于作业内容，不提交
+traning_repo/example/
+traning_repo/acl-recovery/
+
+# Python 运行时产物（skeleton 内已有同名规则，这里再兜一层）
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
