@@ -1,6 +1,20 @@
 # HelloCV
 这是HITWH联创算法纳新任务仓库
 
+【更新】第三周任务：ROS2学习实践
+相关学习文档资料如下：https://www.yuque.com/martin1945/gtet4n/ftreqmpo0wf25ptu?singleDoc# 《第三周任务——ROS2学习实践》
+在此次任务中，我从零搭建了ROS2工作空间，学习了节点的编写，并实操了 Topic、Service、Parameter、TF、Action 以及 Launch 等核心通信机制，最终试着模拟了校内赛 perception -> action 综合链路的小 demo。
+本次实操从基础到综合，完成了以下模块的编写与调试：
+基础通信：
+编写了最简节点 hello_node 验证环境。
+实现了 talker 和 listener，掌握 rclcpp::Publisher/Subscription 和 QoS 队列深度。
+实现了 add_two_ints 的服务端与客户端，理解 Request-Response 模型。
+参数与坐标变换：
+编写 param_node，声明参数并实现终端动态修改（免编译调参）。
+编写 tf_broadcaster，发布 base_link -> laser 的静态坐标变换，并使用 view_frames 生成 TF 树。
+
+
+
 第一周任务：Linux安装与学习、Git学习
 主要通过实操Linux的安装，结合理论知识学习，熟悉Linux及相应工具的使用逻辑；另一方面，基本掌握Git的使用方法，更好地适应协同工作。
 相关学习文档资料如下：
@@ -38,3 +52,4 @@ export DEEPSEEK_API_KEY=sk-xxx #xxx处为个人API key
 python3 play_chat.py --rounds 10
 ```
 运行后应当能够进入剪刀石头布的游戏界面，并进行各种操作。
+
